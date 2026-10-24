@@ -148,25 +148,41 @@
       </ul>
     </div>
     <div class="stack-wrap" aria-label="Diagram: Website, AI, Automation and SaaS connected through one managed core">
-      <svg class="stack" viewBox="0 0 440 440" role="img" aria-hidden="true">
-        <defs>
-          <linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6ee7ff"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
-        </defs>
-        <circle cx="220" cy="220" r="160" class="orbit"/>
-        <circle cx="220" cy="220" r="110" class="orbit o2"/>
-        <g class="spokes" stroke="url(#sg)">
-          <line x1="220" y1="220" x2="220" y2="60"/>
-          <line x1="220" y1="220" x2="380" y2="220"/>
-          <line x1="220" y1="220" x2="220" y2="380"/>
-          <line x1="220" y1="220" x2="60" y2="220"/>
-        </g>
-        <path class="ring" d="M220 60 A160 160 0 0 1 380 220 A160 160 0 0 1 220 380 A160 160 0 0 1 60 220 A160 160 0 0 1 220 60" fill="none" stroke="url(#sg)"/>
-        <g class="core"><circle cx="220" cy="220" r="62"/><text x="220" y="214">Your</text><text x="220" y="236">business</text></g>
-        <g class="sat"><circle cx="220" cy="60" r="40"/><text x="220" y="65">Website</text></g>
-        <g class="sat"><circle cx="380" cy="220" r="40"/><text x="380" y="225">AI</text></g>
-        <g class="sat"><circle cx="220" cy="380" r="40"/><text x="220" y="385">SaaS</text></g>
-        <g class="sat"><circle cx="60" cy="220" r="40"/><text x="60" y="219">Auto-</text><text x="60" y="235">mation</text></g>
-      </svg>
+      <div class="atom" aria-hidden="true">
+        <svg class="atom-svg" viewBox="-250 -235 500 470" role="img">
+          <defs>
+            <linearGradient id="ag" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6ee7ff"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+            <radialGradient id="nucHalo"><stop offset="0" stop-color="#6ee7ff" stop-opacity=".45"/><stop offset=".45" stop-color="#8b5cf6" stop-opacity=".18"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+            <radialGradient id="nucCore" cx=".38" cy=".32" r=".75"><stop offset="0" stop-color="#1b2a5a"/><stop offset=".7" stop-color="#0c1330"/><stop offset="1" stop-color="#090e22"/></radialGradient>
+            <linearGradient id="shimmer" x1="0" y1="0" x2="1" y2="0"><stop offset=".3" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#bff4ff" stop-opacity=".22"/><stop offset=".7" stop-color="#fff" stop-opacity="0"/></linearGradient>
+            <clipPath id="nucClip"><circle r="58"/></clipPath>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+          </defs>
+          <g class="rings">
+          <g class="ring" transform="rotate(0)"><ellipse class="orb" rx="185" ry="56"/><ellipse class="orb-light" rx="185" ry="56" pathLength="100" style="animation-delay:-0.0s"/></g>
+          <g class="ring" transform="rotate(45)"><ellipse class="orb" rx="185" ry="56"/><ellipse class="orb-light" rx="185" ry="56" pathLength="100" style="animation-delay:-1.7s"/></g>
+          <g class="ring" transform="rotate(90)"><ellipse class="orb" rx="185" ry="56"/><ellipse class="orb-light" rx="185" ry="56" pathLength="100" style="animation-delay:-3.4s"/></g>
+          <g class="ring" transform="rotate(135)"><ellipse class="orb" rx="185" ry="56"/><ellipse class="orb-light" rx="185" ry="56" pathLength="100" style="animation-delay:-5.1s"/></g>
+          </g>
+          <g id="atomBack"></g>
+          <g class="nucleus">
+            <circle class="nuc-halo" r="120" fill="url(#nucHalo)"/>
+            <circle class="nuc-ring" r="70"/>
+            <circle class="nuc-core" r="58" fill="url(#nucCore)"/>
+            <g clip-path="url(#nucClip)"><rect class="nuc-shimmer" x="-90" y="-90" width="180" height="180" fill="url(#shimmer)"/></g>
+            <circle r="58" fill="none" stroke="url(#ag)" stroke-width="1.8" filter="url(#glow)"/>
+            <path class="nuc-mark" transform="translate(-15.5 -31) scale(.5)" d="M18 46V18h14a9 9 0 0 1 0 18H18m14 0 12 10"/>
+            <text class="nuc-t" y="22">Your</text><text class="nuc-t" y="37">business</text>
+          </g>
+          <g id="atomFront">
+          <g class="e" data-ring="0" data-speed="0.36" data-phase="0.3"><g class="e-trail"><circle r="3.4" opacity="0.55"/><circle r="3.0" opacity="0.48"/><circle r="2.6" opacity="0.40"/><circle r="2.2" opacity="0.33"/><circle r="1.8" opacity="0.25"/><circle r="1.4" opacity="0.18"/><circle r="1.0" opacity="0.10"/></g><g class="e-chip"><circle class="e-halo" r="54"/><rect x="-48.0" y="-15" width="96" height="30" rx="15"/><circle class="e-dot" cx="-33.0" r="4"/><text x="7" y="4.5">Website</text></g></g>
+          <g class="e" data-ring="45" data-speed="0.5" data-phase="2.2"><g class="e-trail"><circle r="3.4" opacity="0.55"/><circle r="3.0" opacity="0.48"/><circle r="2.6" opacity="0.40"/><circle r="2.2" opacity="0.33"/><circle r="1.8" opacity="0.25"/><circle r="1.4" opacity="0.18"/><circle r="1.0" opacity="0.10"/></g><g class="e-chip"><circle class="e-halo" r="35"/><rect x="-29.0" y="-15" width="58" height="30" rx="15"/><circle class="e-dot" cx="-14.0" r="4"/><text x="7" y="4.5">AI</text></g></g>
+          <g class="e" data-ring="90" data-speed="0.29" data-phase="4.0"><g class="e-trail"><circle r="3.4" opacity="0.55"/><circle r="3.0" opacity="0.48"/><circle r="2.6" opacity="0.40"/><circle r="2.2" opacity="0.33"/><circle r="1.8" opacity="0.25"/><circle r="1.4" opacity="0.18"/><circle r="1.0" opacity="0.10"/></g><g class="e-chip"><circle class="e-halo" r="65"/><rect x="-59.0" y="-15" width="118" height="30" rx="15"/><circle class="e-dot" cx="-44.0" r="4"/><text x="7" y="4.5">Automation</text></g></g>
+          <g class="e" data-ring="135" data-speed="0.42" data-phase="5.4"><g class="e-trail"><circle r="3.4" opacity="0.55"/><circle r="3.0" opacity="0.48"/><circle r="2.6" opacity="0.40"/><circle r="2.2" opacity="0.33"/><circle r="1.8" opacity="0.25"/><circle r="1.4" opacity="0.18"/><circle r="1.0" opacity="0.10"/></g><g class="e-chip"><circle class="e-halo" r="43"/><rect x="-37.0" y="-15" width="74" height="30" rx="15"/><circle class="e-dot" cx="-22.0" r="4"/><text x="7" y="4.5">SaaS</text></g></g>
+          </g>
+        </svg>
+      </div>
       <div class="stack-legend"><span>Audit</span><span>Build</span><span>Run</span></div>
     </div>
   </div>
